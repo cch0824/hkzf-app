@@ -2,6 +2,7 @@ import React, { Fragment, Component } from 'react'
 import { axios } from "../../utils/request"
 import { REACT_APP_API_AXIOS } from '../../utils/urls';
 
+import SearchInput from "../../components/searchInput"
 //引入antd-mobile的组件  
 import { Carousel } from "antd-mobile"
 
@@ -50,7 +51,11 @@ export default class Home extends Component {
     return (
       <div className={styles.home}>
         {/* 轮播图 */}
-        <div className="swiper">
+        <div className={styles.swiper}>
+          {/* 头部搜索 */}
+          <div className={styles.home_search}>
+            <SearchInput />
+          </div>
           {swiperList.length &&
             <Carousel
               autoplay

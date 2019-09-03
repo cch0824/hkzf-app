@@ -1,0 +1,47 @@
+// 搜索栏
+.search_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .input_cont {
+    display: flex;
+    flex: 7;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    .city_name {
+      color: #666;
+      flex: 1;
+      border-right: 1px solid #ccc;
+      span {
+
+      }
+
+      .icon-arrow {
+        font-size: 13px;
+      }
+    }
+
+    .city_search {
+      flex: 4;
+      color: #bbb;
+      display: flex;
+      .icon-seach {
+        margin: 0 10px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .ditu {
+    flex: 1;
+    margin-left: 10px;
+    color: #fff;
+    .icon-map {
+      font-size: 25px;
+    }
+  }
+}

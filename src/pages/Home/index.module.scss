@@ -1,7 +1,18 @@
-.home{
+.home {
   width: 100%;
   height: 100vh;
+  // 轮播图
+  .swiper {
+    .home_search {
+      position: fixed;
+      z-index: 99;
+      left: 10px;
+      right: 0px;
+      top: 20px;
+    }
+  }
 }
+
 // 导航栏
 .home_nav {
   display: flex;
@@ -91,7 +102,7 @@
     margin-bottom: 0;
     padding: 0 5px 10px 5px;
     border-bottom: 1px solid #ddd;
-    &:last-child{
+    &:last-child {
       border-bottom: none;
     }
     .item_img {
@@ -99,7 +110,6 @@
       margin-right: 8px;
       border-radius: 5px;
       img {
-
       }
     }
 
@@ -110,7 +120,6 @@
       justify-content: space-between;
       .item_title {
         font-weight: 600;
-
       }
 
       .item_desc {
